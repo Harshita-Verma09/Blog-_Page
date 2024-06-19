@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(26, 25, 25);
+}
+
+.container{
+    height: 25rem;
+    width: 22rem;
+    background-color: rgb(252, 87, 206);
+    align-items: center;
+    justify-content: center;
+    margin-left: 27rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+}
+form{
+   padding: 5rem;
+   line-height: 3rem;
+}
+input, textarea{
+    /* height: 1.5rem;
+    width: 15rem;
+    padding: 0.5rem; */
+    /* line-height: 2rem; */
+    /* border-radius: 12px;
+    /* align-items: center; */
+    /* justify-content: center;
+    right: 2rem; */
+
+    height: 1.5rem;
+    width: 13rem;
+    border-radius: 6px;
+    padding: 0.5rem;
+    
+}
+button{
+    height: 2.3rem;
+    width: 6rem;
+    background-color: rgb(41, 40, 40);
+    color: rgb(255, 0, 183);
+    padding: 0.2rem;
+    border-radius: 12px;
+}

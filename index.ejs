@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <div class="blog">
+        <h1>Blog Articles</h1>
+        <div id="part2">
+            <h3>Articles</h3>
+            <h3> About</h3>
+            <h3>Help</h3>
+        </div>
+    </div>
+    <p class="intro">519 inspirational designs, illustrations, and graphic elements from the world’s best designers.
+        Want more inspiration? Browse our search results..</p>
+    <% for(article of articles) { %>
+        <div class="container">
+            <div class="articles">
+                <h2 class="user">@<%= article.username %>
+                </h2>
+
+                <p class="cotact">contact:
+                    <%= article.contact %>
+                </p>
+                <p class="content">content:
+                    <%= article.content %>
+                </p>
+                <a href="http://localhost:8080/articles/<%= article.id %>"> See in details</a>
+                <a href="http://localhost:8080/articles/<%= article.id %>/edit"> Edit </a>
+                
+                <form method ="post" action="/articles/<%= article.id %>?_method=DELETE"> 
+                    <button>Delete Post</button> 
+                </form>
+
+            </div>
+        </div>
+        <% } %>
+            <br>
+            <a href="http://localhost:8080/articles/new">Create New Post</a>
+
+</body>
+
+</html>
